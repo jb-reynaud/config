@@ -1,51 +1,53 @@
+[user]
+	name = JBaptiste REYNAUD
+	email =
+
+[core]
+	editor = vim
+
 [color]
 	ui = true
-[github]
-	user = jibe84
-[user]
-	email = jbaptiste.reynaud@gmail.com
-	name = JBaptiste REYNAUD
-
 
 [alias]
-    # Commons
-    co = checkout
-    cob = checkout -b
-    st = status -s
-    c = commit
-    cam = commit -am
+	# Commons
+	co = checkout
+	cob = checkout -b
+	st = status -s
+	c = commit
+	cm = commit -m
+	cam = commit -am
 
-    # Push head
-    pushead = !git push origin HEAD
-    p = !git pushead
-    pf = !git pushead -f
+	# Push head
+	pushead = !git push origin HEAD
+	p = !git pushead
+	pf = !git pushead -f
     
-    # Add fix
-    fix = !git add --all && git commit -am "Fix." && git pushead
+	# Add fix
+	fix = !git add --all && git commit -am "Fix." && git pushead
     
-    # Fix last commit
-    fixup = !git add --all && git commit --amend -C HEAD
-    fixnow = !git fixup && git pushead -f
+	# Fix last commit
+	fixup = !git add --all && git commit --amend -C HEAD
+	fixnow = !git fixup && git pushead -f
 
-    # Delete last commit
-    undo = !git reset --soft HEAD~1
+	# Delete last commit
+	undo = !git reset --soft HEAD~1
     
-    # Get working directory up to date
-    up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+	# Get working directory up to date
+	up = !git pull --rebase --prune $@ && git submodule update --init --recursive
 
-    # Clean merged branch
-    bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
-    bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
-    ready = !git bdone && composer install --ignore-platform-reqs
-    
-    # Rebase
-    rb = "!f() { git rebase -i HEAD~$1; }; f"
-    rbc = !git rebase --continue
-    rba = !git rebase --abort
+	# Clean merged branch
+	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+	bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
+	ready = !git bdone && composer install --ignore-platform-reqs
 
-    # List previous commits
-    ls = !git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate
-    ll = !git ls --numstat
+	# Rebase
+	rb = "!f() { git rebase -i HEAD~$1; }; f"
+	rbc = !git rebase --continue
+	rba = !git rebase --abort
 
-    # Show aliases
-    aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+	# List previous commits
+	ls = !git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate
+	ll = !git ls --numstat
+
+	# Show aliases
+	aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
