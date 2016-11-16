@@ -105,3 +105,13 @@ alias cd='cdls'
 
 # Osmc
 alias osmc='ssh osmc@192.168.1.84'
+
+# Symfony
+alias sf2='php app/console'
+alias sf='php bin/console'
+
+# Tests
+alias atoum='./bin/atoum -ncc'
+alias behat='./bin/behat'
+alias coke='./bin/coke'
+alias testme='coke && atoum'
