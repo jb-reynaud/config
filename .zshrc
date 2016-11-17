@@ -27,7 +27,7 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -83,15 +83,17 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Enable auto update
 DISABLE_UPDATE_PROMPT=true
 
 # Commons
 alias c='clear'
 alias h='history'
 alias ll='ls -lhA'
-
-# Directories
 alias pub='cd ~/Public'
+
+# Disable auto correction on given alias
+alias co='nocorrect co'
 
 # Perform 'ls' after 'cd' if successful
 cdls() {
@@ -102,6 +104,9 @@ cdls() {
   fi
 }
 alias cd='cdls'
+
+# Composer
+alias composer='php /usr/local/bin/composer'
 
 # Osmc
 alias osmc='ssh osmc@192.168.1.84'
