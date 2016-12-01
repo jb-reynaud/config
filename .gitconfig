@@ -44,6 +44,7 @@
 	rb = "!f() { git rebase -i HEAD~$1; }; f"
 	rbc = !git rebase --continue
 	rba = !git rebase --abort
+	rbmaster = !git co master && git up && git co - && git rebase master
 
 	# List previous commits
 	ls = !git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate
