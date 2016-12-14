@@ -56,6 +56,9 @@ plugins=(git brew composer symfony2 zsh-autosuggestions)
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# Enable auto update
+DISABLE_UPDATE_PROMPT=true
+
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -82,9 +85,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Enable auto update
-DISABLE_UPDATE_PROMPT=true
 
 # Commons
 alias c='clear'
