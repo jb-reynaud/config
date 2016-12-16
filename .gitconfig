@@ -24,10 +24,13 @@
 
 	# Add fix
 	fix = !git add --all && git commit -am "Fix." && git pushead
+	f = !git fix
 
 	# Fix last commit
 	fixup = !git add --all && git commit --amend -C HEAD
 	fixnow = !git fixup && git pushead -f
+	fu = !git fixup
+	fn = !git fixnow
 
 	# Delete last commit
 	undo = !git reset --soft HEAD~1
@@ -51,6 +54,7 @@
 	ll = !git ls --numstat
 	
 	# Stash
+	sc = !git stash clear
 	sl = !git stash list --pretty=format:'%Cred%h%Creset -%C(yellow)(%C(bold magenta)%gd%C(yellow))%Creset %<(70,trunc)%s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	
 	# Show aliases
