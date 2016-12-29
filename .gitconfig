@@ -47,6 +47,7 @@
 	rb = "!f() { git rebase -i HEAD~$1; }; f"
 	rbc = !git rebase --continue
 	rba = !git rebase --abort
+	rbs = !git rebase --skip
 	rbmaster = !git co master && git up && git co - && git rebase master
 
 	# List previous commits
