@@ -95,6 +95,9 @@ alias pub='cd ~/Public'
 # Disable auto correction on given alias
 alias co='nocorrect co'
 
+# Prevent common errors
+alias gti='git'
+
 # Perform 'ls' after 'cd' if successful
 cdls() {
   builtin cd "$*"
