@@ -54,7 +54,7 @@ plugins=(git brew composer symfony2 zsh-autosuggestions)
 # User configuration
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 
 # Enable auto update
 DISABLE_UPDATE_PROMPT=true
@@ -123,6 +123,3 @@ alias atoum='./bin/atoum -ncc'
 alias behat='./bin/behat'
 alias coke='./bin/coke'
 alias testme='coke && atoum'
-
-# Fix php7.1 install
-export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
