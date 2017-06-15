@@ -112,7 +112,7 @@ alias cd='cdls'
 alias composer='php /usr/local/bin/composer'
 
 # Osmc
-alias osmc='ssh osmc@192.168.1.84'
+alias osmc='ssh osmc@192.168.1.76'
 
 # Symfony
 alias sf2='php app/console'
