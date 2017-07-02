@@ -1,6 +1,11 @@
 # Config
 My personal config
 
+# Terminal
+
+- [Oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [Vimrc](https://github.com/amix/vimrc)
+
 # Programs
 
 ## Atom
