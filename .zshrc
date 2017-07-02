@@ -92,9 +92,6 @@ alias h='history'
 alias ll='ls -lhA'
 alias pub='cd ~/Public'
 
-# Disable auto correction on given alias
-alias co='nocorrect co'
-
 # Prevent common errors
 alias gti='git'
 
@@ -123,3 +120,6 @@ alias atoum='./bin/atoum -ncc'
 alias behat='./bin/behat'
 alias coke='./bin/coke'
 alias testme='coke && atoum'
+
+# Disable auto correction 
+unsetopt correct_all
