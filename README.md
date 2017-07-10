@@ -14,6 +14,7 @@ My personal config
 - Emmet
 - File-icons
 - Higlight-selected
+- Language-babel
 - Linter
 - Linter-php
 - Minimap
