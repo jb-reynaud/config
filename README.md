@@ -3,6 +3,7 @@ My personal config
 
 # Terminal
 
+- [Brew](https://brew.sh/index.html)
 - [Oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Vimrc](https://github.com/amix/vimrc)
 
@@ -27,9 +28,7 @@ My personal config
 ### Plugins
 - .ignore
 - Atoum plugin
-- Docker integration
 - EditorConfig
-- Markdown support
 - PHP Annotations
 - PHP composer.json support
 - Symfony plugin
