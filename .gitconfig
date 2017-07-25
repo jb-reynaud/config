@@ -40,8 +40,9 @@
 	up = !git pull --rebase --prune $@ && git submodule update --init --recursive
 
 	# Clean merged branch
-	delete-done = !git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
-     	ready = !git co master && git delete-done && composer install --ignore-platform-reqs
+	deletedone = !git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d
+	dd = !git deletedone
+	ready = !git co master && git deletedone && composer install --ignore-platform-reqs
 
 	# Rebase
 	rb = "!f() { git rebase -i HEAD~$1; }; f"
