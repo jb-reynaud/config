@@ -53,7 +53,7 @@ plugins=(git brew composer zsh-autosuggestions)
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/usr/sbin:/sbin:/usr/bin:/bin:/usr/local/bin"
 export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 
 # Enable auto update
