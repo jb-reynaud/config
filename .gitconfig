@@ -40,7 +40,7 @@
 	up = !git pull --rebase --prune $@ && git submodule update --init --recursive
 
 	# Clean merged branch
-	deletedone = !git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d
+	deletedone = !git branch --merged | grep -v "\*" | grep -v master | xargs -n 1 git branch -d
 	dd = !git deletedone
 	ready = !git co master && git deletedone && composer install --ignore-platform-reqs
 
