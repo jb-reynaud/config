@@ -14,3 +14,13 @@ Create a file `~/.ssh/config`:
 Host *
     UseKeychain yes
 ```
+
+### Helpful commands
+
+```bash
+# Open finder in current folder.
+open .
+
+# Open phpstorm in current folder.
+pstorm .
+```
