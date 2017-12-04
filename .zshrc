@@ -1,3 +1,6 @@
+# Set user
+DEFAULT_USER="jbreynaud"
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/jbreynaud/.oh-my-zsh
 
