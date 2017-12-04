@@ -21,6 +21,7 @@ Host *
 # Open finder in current folder.
 open .
 
-# Open phpstorm in current folder.
+# Open editor in current folder.
+atom .
 pstorm .
 ```
