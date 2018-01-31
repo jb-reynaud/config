@@ -115,14 +115,14 @@ alias composer='php /usr/local/bin/composer'
 alias osmc='ssh osmc@192.168.1.76'
 
 # Symfony
-alias sf2='php app/console'
 alias sf='php bin/console'
 
 # Tests
 alias atoum='./bin/atoum -ncc'
 alias behat='./bin/behat'
-alias coke='./bin/coke'
-alias testme='coke && atoum'
+
+# Search a file everywhere (use it as "lycos nginx.conf")
+alias lycos='sudo find / -name'
 
 # Disable auto correction 
 unsetopt correct_all
