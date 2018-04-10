@@ -54,11 +54,6 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git brew composer zsh-autosuggestions)
 
-# User configuration
-
-export PATH="/usr/sbin:/sbin:/usr/bin:/bin:/usr/local/bin"
-export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
-
 # Enable auto update
 DISABLE_UPDATE_PROMPT=true
 
