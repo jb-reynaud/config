@@ -24,4 +24,8 @@ open .
 # Open editor in current folder.
 atom .
 pstorm .
+
+# Get wifi password.
+brew install wifi-password
+wifi-password
 ```
