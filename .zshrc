@@ -121,3 +121,7 @@ alias lycos='sudo find / -name'
 
 # Disable auto correction 
 unsetopt correct_all
+
+# Use programs from brew (like php) before default one.
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+
