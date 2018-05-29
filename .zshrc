@@ -103,18 +103,11 @@ cdls() {
 }
 alias cd='cdls'
 
-# Composer
-alias composer='php /usr/local/bin/composer'
-
 # Osmc
 alias osmc='ssh osmc@192.168.1.76'
 
 # Symfony
 alias sf='php bin/console'
-
-# Tests
-alias atoum='./bin/atoum -ncc'
-alias behat='./bin/behat'
 
 # Search a file everywhere (use it as "lycos nginx.conf")
 alias lycos='sudo find / -name'
@@ -124,4 +117,3 @@ unsetopt correct_all
 
 # Use programs from brew (like php) before default one.
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-
