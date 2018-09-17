@@ -6,6 +6,7 @@ My personal config
 - [Brew](https://brew.sh/index.html)
 - [Oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Vimrc](https://github.com/amix/vimrc)
+- [Prettyping](http://denilson.sa.nom.br/prettyping/)
 
 ### Stop asking for ssh password
 
