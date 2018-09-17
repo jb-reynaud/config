@@ -90,6 +90,8 @@ alias h='history'
 alias ll='ls -lhA'
 alias pub='cd ~/Public'
 
+alias ping='prettyping --nolegend'
+
 # Prevent common errors
 alias gti='git'
 
