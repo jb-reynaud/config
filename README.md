@@ -5,8 +5,9 @@ My personal config
 
 - [Brew](https://brew.sh/index.html)
 - [Oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
-- [Vimrc](https://github.com/amix/vimrc)
 - [Prettyping](http://denilson.sa.nom.br/prettyping/)
+- [Vimrc](https://github.com/amix/vimrc)
+- [PowerLevel9K](https://dev.to/equiman/iterm2--oh-my-zsh--powerlevel9k-best-terminal-combination-for-geeks-58l5)
 
 ### Stop asking for ssh password
 
