@@ -108,6 +108,9 @@ alias cd='cdls'
 # Osmc
 alias osmc='ssh osmc@192.168.1.76'
 
+# Docker
+alias dc='docker-compose'
+
 # Symfony
 alias sf='php bin/console'
 
