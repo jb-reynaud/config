@@ -110,6 +110,7 @@ alias osmc='ssh osmc@192.168.1.76'
 
 # Docker
 alias dc='docker-compose'
+alias dsf='docker-compose exec php bin/console'
 
 # Symfony
 alias sf='php bin/console'
