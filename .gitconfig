@@ -1,6 +1,6 @@
 [user]
 	name = JBaptiste REYNAUD
-	email = jbaptiste.reynaud@gmail.com
+	email = -
 
 [core]
 	editor = vim
@@ -50,6 +50,12 @@
 	rba = !git rebase --abort
 	rbs = !git rebase --skip
 	rbmaster = !git co master && git up && git co - && git rebase master
+	
+	# Cherry-pick.
+	cp = !git cherry-pick
+	cpc = !git cherry-pick --continue
+	cpa = !git cherry-pick --abort
+	cps = !git cherry-pick --skip
 
 	# List previous commits.
 	ls = !git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate
