@@ -7,7 +7,7 @@ My personal config
 - [Oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Prettyping](http://denilson.sa.nom.br/prettyping/)
 - [Vimrc](https://github.com/amix/vimrc)
-- [PowerLevel9K](https://dev.to/equiman/iterm2--oh-my-zsh--powerlevel9k-best-terminal-combination-for-geeks-58l5)
+- [PowerLevel10K](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
 
 ### Stop asking for ssh password
 
