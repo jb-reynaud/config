@@ -13,15 +13,15 @@ DISABLE_UPDATE_PROMPT=true
 # Theme.
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
-# Commons.
+# Aliases.
 alias c='clear'
 alias h='history'
 alias ll='ls -lhA'
 alias pub='cd ~/Public'
 
-alias ping='prettyping --nolegend'
-
-# Prevent common errors.
+alias cat='bat --paging=never'
+alias dc='docker-compose'
+alias dsf='docker-compose exec php bin/console'
 alias gti='git'
 
 # Perform 'ls' after 'cd' if successful.
@@ -34,7 +34,7 @@ cdls() {
 }
 alias cd='cdls'
 
-# Pretty csv.
+# Pretty cat csv.
 catcsv() {
  	if [[ $1 =~ \.csv$ ]]; then
 		cat $1 | column -t -s, | less -S
@@ -43,10 +43,6 @@ catcsv() {
 	fi
 }
 alias cat="catcsv"
-
-# Docker.
-alias dc='docker-compose'
-alias dsf='docker-compose exec php bin/console'
 
 # Disable auto correction. 
 unsetopt correct_all
